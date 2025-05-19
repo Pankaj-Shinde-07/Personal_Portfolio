@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects - Explore Pankaj Krushna Shinde's innovative projects." />
+    <title>Projects - Pankaj Krushna Shinde</title>
+
+    <!-- Link to Projects Page CSS -->
+    <link rel="stylesheet" href="projects.css" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Boxicons for additional icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><em>PANKAJ KRUSHNA SHINDE</em></div>
+            <!-- Dark Mode Toggle -->
+            <div class="dark-mode-toggle">
+                <i class="fas fa-moon" id="toggleDarkMode"></i>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="qualification.html">Qualifications</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Projects Hero Section -->
+        <section class="projects-hero">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p>Showcasing creative solutions and innovative ideas.</p>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="projects-grid">
+            <div class="container">
+                <!-- Project Card -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Placeholder image, replace with your project image -->
+                        <img src="https://via.placeholder.com/400x250?text=Project+Image" alt="Project Image" />
+                    </div>
+                    <div class="project-content">
+                        <h2>CONNECTING INFIRM WITH THE SAVIOUR</h2>
+                        <p>
+                            Our aim is to connect patients with local, reputable doctors in their locality in an easy
+                            way.
+                            To achieve this, we developed an app called "DOCS AND ME."
+                        </p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <!-- Additional Project Card (Example) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Project+Image" alt="Project Image" />
+                    </div>
+                    <div class="project-content">
+                        <h2>Another Innovative Project</h2>
+                        <p>
+                            work in progress. This project focuses on enhancing user experience through innovative design and technology.
+                        </p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Pankaj Krushna Shinde. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pankaj-shinde-1a7864350" title="LinkedIn" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/pankajshinde1488/#" title="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" title="WhatsApp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dark Mode Toggle and Hamburger Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Dark mode toggle functionality
+            const toggleDarkMode = document.getElementById("toggleDarkMode");
+            toggleDarkMode.addEventListener("click", () => {
+                document.body.classList.toggle("dark-mode");
+                if (document.body.classList.contains("dark-mode")) {
+                    toggleDarkMode.classList.remove("fa-moon");
+                    toggleDarkMode.classList.add("fa-sun");
+                } else {
+                    toggleDarkMode.classList.remove("fa-sun");
+                    toggleDarkMode.classList.add("fa-moon");
+                }
+            });
+
+            // Hamburger menu toggle for mobile view
+            const menuIcon = document.querySelector(".menu-icon");
+            const navLinks = document.querySelector(".nav-links");
+            menuIcon.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9; /* Light gray background for better readability */
+    color: #333; /* Dark gray text for better contrast */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #1e1e2f; /* Darker background for dark mode */
+    color: #f4f4f9; /* Light text for dark mode */
+}
+
+/* Header & Navigation */
+header {
+    background: #005a8c; /* Dark blue background for header */
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff; /* White text for the logo */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff; /* White text for navigation links */
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background: #0077b5; /* Lighter blue for hover effect */
+    color: #fff; /* Keep text white */
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+/* Hamburger Menu (Mobile) */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #005a8c; /* Dark blue for mobile menu */
+        flex-direction: column;
+        width: 200px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, #0077b5, #00aaff); /* Blue gradient for better readability */
+    color: #fff; /* White text for contrast */
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Basic Information Section */
+.basic-info {
+    background: #ffffff; /* White background for better readability */
+    padding: 3rem 2rem;
+    border-radius: 8px;
+}
+
+.basic-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0077b5; /* Blue heading for better visibility */
+    text-align: center;
+}
+
+.basic-info ul {
+    list-style: none;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding-left: 1rem;
+}
+
+.basic-info ul li {
+    margin-bottom: 0.8rem;
+}
+
+.basic-info ul li strong {
+    color: #0077b5; /* Blue for emphasis */
+}
+
+/* Footer */
+footer {
+    background: #333; /* Dark gray background for footer */
+    color: #f4f4f9; /* Light text for footer */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    color: #f4f4f9; /* Light text for social icons */
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0077b5; /* Blue hover effect for social icons */
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #0077b5; /* Blue for social icons */
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #005a8c; /* Darker blue on hover */
+    transform: scale(1.2);
+}
+
+.social-links a:nth-child(2):hover {
+    color: #e4405f; /* Instagram pink */
+}
+
+.social-links a:nth-child(3):hover {
+    color: #25d366; /* WhatsApp green */
+}
+
+/* About Page */
+.about {
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #0077b5; /* Blue heading */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+/* Skills Page */
+.skills {
+    background-color: #0077b5; /* Blue background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff; /* White heading */
+}
+
+.skills p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+/* Projects Page */
+.projects {
+    background-color: #ff9800; /* Orange background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff; /* White heading */
+}
+
+.projects p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+/* Contact Page */
+.contact {
+    background-color: #333; /* Dark gray background */
+    color: #f4f4f9; /* Light text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #f4f4f9; /* Light heading */
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 20px 0;
+}

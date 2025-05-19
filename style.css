@@ -1,0 +1,210 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f0f4f8; /* Light blue-gray background for a clean look */
+    color: #2c3e50; /* Dark slate gray text for better readability */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #2c3e50; /* Dark slate gray background for dark mode */
+    color: #ecf0f1; /* Light gray text for dark mode */
+}
+
+/* Header & Navigation */
+header {
+    background: #0077b5; /* Blue background for header */
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff; /* White text for the logo */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff; /* White text for navigation links */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background: #005a8c; /* Darker blue for hover effect */
+    color: #fff; /* Keep text white */
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(135deg, #0077b5, #005a8c); /* Blue gradient for hero section */
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff; /* White text for hero section */
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: #f4f4f9; /* Slightly off-white for secondary text */
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #f4f4f9; /* Slightly off-white for paragraph text */
+    margin-bottom: 1.5rem;
+}
+
+/* Style for the download button */
+.btn {
+    text-decoration: none;
+    background: #ff5722; /* Vibrant orange background */
+    color: #fff; /* White text for better contrast */
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #e64a19; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    color: #fff; /* Keep text white */
+}
+
+/* Footer */
+footer {
+    background: #333; /* Dark gray background for footer */
+    color: #f4f4f9; /* Light text for footer */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-content p {
+    color: #f4f4f9; /* Light text for footer paragraph */
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #f4f4f9; /* Light text for social icons */
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0077b5; /* Blue hover effect for social icons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #005a8c; /* Dark blue for mobile menu */
+        flex-direction: column;
+        width: 200px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #0077b5; /* Blue for social icons */
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #005a8c; /* Darker blue on hover */
+    transform: scale(1.2);
+}
+
+.social-links a:nth-child(2):hover {
+    color: #e4405f; /* Instagram pink */
+}
+
+.social-links a:nth-child(3):hover {
+    color: #25d366; /* WhatsApp green */
+}
+
+/* Horizontal Social Links Below Logo */
+.horizontal-social-links {
+    margin-top: 10px; /* Add spacing between the logo and social links */
+    text-align: center; /* Center-align the links */
+}
+
+.horizontal-social-links .social-links {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    gap: 15px; /* Add spacing between icons */
+}
+
+.horizontal-social-links .social-links a {
+    text-decoration: none;
+    color: #0077b5; /* Blue color for better visibility */
+    font-size: 24px; /* Adjust icon size */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.horizontal-social-links .social-links a:hover {
+    color: #ff9800; /* Bright orange hover effect */
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
